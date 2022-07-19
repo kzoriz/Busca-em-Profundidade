@@ -86,4 +86,3 @@ def posAtual(posicao):
                 lista[j] = item
                 lista[7] = x
 
-
