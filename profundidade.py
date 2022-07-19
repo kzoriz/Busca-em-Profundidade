@@ -1,6 +1,6 @@
 import re
 #lista = ['BG', 'ACH', 'BF', 'EH', 'DF', 'CE', 'A', 'BD']
-lista = ['BC', 'A', 'A']
+lista = ['BD', 'AC', 'B', 'A']
 
 
 def posAtual(posicao):

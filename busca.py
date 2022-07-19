@@ -12,28 +12,23 @@ posAtual(posicao)
 while posicao != posFinal:
     #caminho.append(posicao)
     if posicao == 'A':
-        posAtual(posicao)
         print("POSIÇÃO A")
-        print(lista)
+        posAtual(posicao)
         if len(lista[0]) > 0:
             posicao = lista[0][0]
             if posicao == posFinal:
                 caminho.append(posicao)
-                break
-            percurso.append(posicao)
-            caminho.append(posicao)
+            else:
+                percurso.append(posicao)
+                caminho.append(posicao)
 
         else:
-            print(percurso)
             percurso = percurso[:-1]
-            print(percurso)
             posicao = percurso[-1]
             caminho.append(posicao)
-            #percurso.append(posicao)
     elif posicao == 'B':
         print("POSIÇÃO B")
         posAtual(posicao)
-        print(lista)
         if len(lista[1]) > 0:
             posicao = lista[1][0]
             if posicao == posFinal:
@@ -43,30 +38,22 @@ while posicao != posFinal:
                 caminho.append(posicao)
         else:
             percurso = percurso[:-1]
-            print("percurso B")
-            print(percurso)
             posicao = percurso[-1]
             caminho.append(posicao)
-            #percurso.append(posicao)
     elif posicao == 'C':
         print("POSIÇÃO C")
         posAtual(posicao)
-        print(lista)
         if len(lista[2]) > 0:
             posicao = lista[2][0]
             if posicao == posFinal:
                 caminho.append(posicao)
-            percurso.append(posicao)
-            caminho.append(posicao)
+            else:
+                percurso.append(posicao)
+                caminho.append(posicao)
         else:
-            print(percurso)
             percurso = percurso[:-1]
-            print("percurso C")
-            print(percurso)
             posicao = percurso[-1]
             caminho.append(posicao)
-            #percurso.append(posicao)
-            #break
     elif posicao == 'D':
         print("POSIÇÃO D")
         if len(lista[3]) > 0:
@@ -119,4 +106,4 @@ print(caminho)
 print("lista")
 print(lista)
 print("posição")
-print(posicao)
+print("-->".join(caminho))
