@@ -1,11 +1,9 @@
 from profundidade import *
 
-#print(lista)
 percurso = []
 caminho = []
 posicao = input("Posição Inicial").upper()
 posFinal = input("Posicao Final").upper()
-print(posicao)
 percurso.append(posicao)
 caminho.append(posicao)
 posAtual(posicao)
@@ -56,54 +54,75 @@ while posicao != posFinal:
             caminho.append(posicao)
     elif posicao == 'D':
         print("POSIÇÃO D")
+        posAtual(posicao)
         if len(lista[3]) > 0:
-            percurso.append(posicao)
             posicao = lista[3][0]
             if posicao == posFinal:
                 caminho.append(posicao)
-            posAtual(posicao)
+            else:
+                percurso.append(posicao)
+                caminho.append(posicao)
         else:
-            percurso = percurso[-1]
+            percurso = percurso[:-1]
             posicao = percurso[-1]
+            caminho.append(posicao)
     elif posicao == 'E':
         print("POSIÇÃO E")
+        posAtual(posicao)
         if len(lista[4]) > 0:
-            percurso.append(posicao)
             posicao = lista[4][0]
-            posAtual(posicao)
+            if posicao == posFinal:
+                caminho.append(posicao)
+            else:
+                percurso.append(posicao)
+                caminho.append(posicao)
         else:
-            percurso = percurso[-1]
+            percurso = percurso[:-1]
             posicao = percurso[-1]
+            caminho.append(posicao)
     elif posicao == 'F':
         print("POSIÇÃO F")
+        posAtual(posicao)
         if len(lista[5]) > 0:
-            percurso.append(posicao)
             posicao = lista[5][0]
-            posAtual(posicao)
+            if posicao == posFinal:
+                caminho.append(posicao)
+            else:
+                percurso.append(posicao)
+                caminho.append(posicao)
         else:
             percurso = percurso[:-1]
             posicao = percurso[-1]
+            caminho.append(posicao)
     elif posicao == 'G':
         print("POSIÇÃO G")
+        posAtual(posicao)
         if len(lista[6]) > 0:
-            percurso.append(posicao)
             posicao = lista[6][0]
-            posAtual(posicao)
+            if posicao == posFinal:
+                caminho.append(posicao)
+            else:
+                percurso.append(posicao)
+                caminho.append(posicao)
         else:
             percurso = percurso[:-1]
             posicao = percurso[-1]
+            caminho.append(posicao)
     elif posicao == 'H':
         print("POSIÇÃO H")
-        percurso.append(posicao)
-        posicao = lista[7][0]
         posAtual(posicao)
+        if len(lista[7]) > 0:
+            posicao = lista[7][0]
+            if posicao == posFinal:
+                caminho.append(posicao)
+            else:
+                percurso.append(posicao)
+                caminho.append(posicao)
+        else:
+            percurso = percurso[:-1]
+            posicao = percurso[-1]
+            caminho.append(posicao)
     else:
         print("break")
         break
-#percurso.append(posicao)
-print("caminho")
-print(caminho)
-print("lista")
-print(lista)
-print("posição")
 print("-->".join(caminho))
