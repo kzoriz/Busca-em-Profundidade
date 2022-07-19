@@ -1,7 +1,6 @@
 import re
-
-lista = ['BG', 'ACH', 'BF', 'EH', 'DF', 'CE', 'A', 'BD']
-#lista = ['B', 'A', 'B', 'A', 'B', 'A', 'B', 'A']
+#lista = ['BG', 'ACH', 'BF', 'EH', 'DF', 'CE', 'A', 'BD']
+lista = ['BC', 'A', 'A']
 
 
 def posAtual(posicao):
@@ -87,22 +86,4 @@ def posAtual(posicao):
                 lista[j] = item
                 lista[7] = x
 
-posAtual('E')
-print(lista)
-posAtual('D')
-print(lista)
-posAtual('H')
-print(lista)
-posAtual('B')
-print(lista)
-posAtual('A')
-print(lista)
-posAtual('G')
-print(lista)
-posAtual('C')
-print(lista)
-'''
-posAtual('D')
-print(lista)
 
-'''
