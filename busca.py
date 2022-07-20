@@ -8,7 +8,6 @@ percurso.append(posicao)
 caminho.append(posicao)
 posAtual(posicao)
 while posicao != posFinal:
-    #caminho.append(posicao)
     if posicao == 'A':
         print("POSIÇÃO A")
         posAtual(posicao)
@@ -125,4 +124,4 @@ while posicao != posFinal:
     else:
         print("break")
         break
-print("-->".join(caminho))
+print(" --> ".join(caminho))

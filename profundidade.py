@@ -86,3 +86,33 @@ def posAtual(posicao):
                 lista[j] = item
                 lista[7] = x
 
+"""
+posAtual('E')
+print(lista)
+posAtual('D')
+print(lista)
+posAtual('H')
+print(lista)
+posAtual('B')
+print(lista)
+posAtual('A')
+print(lista)
+posAtual('G')
+print(lista)
+posAtual('A')
+print(lista)
+posAtual('B')
+print(lista)
+posAtual('C')
+print(lista)
+posAtual('B')
+print(lista)
+posAtual('H')
+print(lista)
+posAtual('D')
+print(lista)
+posAtual('E')
+print(lista)
+posAtual('F')
+print(lista)
+"""
